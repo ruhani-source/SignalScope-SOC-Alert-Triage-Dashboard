@@ -13,7 +13,7 @@ Suggests investigation steps based on detected behavior
 Displays user activity history for anomaly detection
 - Dark-themed SOC dashboard UI:
 Designed to mimic real-world security monitoring tools
-- Key Concepts
+## Key Concepts
 Security event triage
 Behavioral anomaly detection (rule-based)
 Explainable decision systems
