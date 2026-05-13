@@ -1,16 +1,27 @@
-# React + Vite
+## SignalScope: SOC Alert Triage Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive Security Operations Center (SOC) simulation tool that helps analysts prioritize, interpret, and respond to security alerts under uncertainty.
 
-Currently, two official plugins are available:
+## Features
+- Risk-based alert prioritization: 
+Alerts ranked using rule-based scoring system
+-  Explainable security decisions:
+ Breaks down risk scores into contributing signals
+- Automated analyst recommendations:
+Suggests investigation steps based on detected behavior
+- Login timeline visualization:
+Displays user activity history for anomaly detection
+- Dark-themed SOC dashboard UI:
+Designed to mimic real-world security monitoring tools
+- Key Concepts
+Security event triage
+Behavioral anomaly detection (rule-based)
+Explainable decision systems
+SOC workflow simulation
+Event timeline analysis
+## Tech Stack
+React (Vite)
+JavaScript (ES6)
+CSS (inline styling / optional Tailwind upgrade)
+📸 Preview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
