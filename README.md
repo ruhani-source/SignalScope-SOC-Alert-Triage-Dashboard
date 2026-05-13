@@ -71,7 +71,6 @@ npm install
 npm run dev
 
 #### Then open:
-
 http://localhost:5173
 
 
@@ -86,3 +85,6 @@ http://localhost:5173
 Traditional security tools often present alerts as: high-volume, low-context signals
 
 SignalScope improves this by: adding explainability, prioritization, and decision support
+
+#### Note
+This project is a simulation and uses mock security data for demonstration purposes.
