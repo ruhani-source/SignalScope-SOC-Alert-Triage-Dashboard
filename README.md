@@ -4,7 +4,7 @@ An interactive Security Operations Center (SOC) simulation tool designed to help
 
 ## Overview
 
-Security analysts deal with high volumes of noisy alerts. The hardest part is not detection—it’s deciding what matters.
+Security analysts deal with high volumes of noisy alerts. The hardest part is not detection, it’s deciding what matters.
 
 ## SignalScope simulates a SOC triage workflow by:
 
@@ -83,10 +83,6 @@ http://localhost:5173
 
 ### Problem It Solves
 
-Traditional security tools often present alerts as:
+Traditional security tools often present alerts as: high-volume, low-context signals
 
-high-volume, low-context signals
-
-SignalScope improves this by:
-
-adding explainability, prioritization, and decision support
+SignalScope improves this by: adding explainability, prioritization, and decision support
