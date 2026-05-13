@@ -1,8 +1,8 @@
-## SignalScope: SOC Alert Triage Dashboard
+# SignalScope: SOC Alert Triage Dashboard
 
 An interactive Security Operations Center (SOC) simulation tool designed to help analysts prioritize, interpret, and respond to security alerts under uncertainty using explainable, rule-based decision logic.
 
-## Overview
+# Overview
 
 Security analysts deal with high volumes of noisy alerts. The hardest part is not detection—it’s deciding what matters.
 
@@ -13,8 +13,8 @@ Security analysts deal with high volumes of noisy alerts. The hardest part is no
 - Suggesting investigation actions
 - Visualizing user login behavior over time
   
-### Key Features
-# Risk-Based Alert Prioritization
+# Key Features
+### Risk-Based Alert Prioritization
 
 Alerts are scored using a rule-based system that evaluates behavioral security signals such as:
 
@@ -24,7 +24,7 @@ Alerts are scored using a rule-based system that evaluates behavioral security s
 - VPN/proxy suspicion
 - MFA usage anomalies
 
-## Explainable Security Decisions
+### Explainable Security Decisions
 
 Each alert includes a transparent breakdown of:
 
@@ -32,7 +32,7 @@ Each alert includes a transparent breakdown of:
 - Weighted risk factors
 - Human-readable interpretation of risk
   
-## Analyst Decision Support
+### Analyst Decision Support
 
 The system suggests recommended actions such as:
 
@@ -41,7 +41,7 @@ The system suggests recommended actions such as:
 - Reviewing IP reputation
 - Investigating session anomalies
   
-## Login Timeline Visualization
+### Login Timeline Visualization
 
 Displays chronological user activity:
 
