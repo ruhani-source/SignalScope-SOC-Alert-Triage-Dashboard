@@ -20,8 +20,8 @@ Explainable decision systems
 SOC workflow simulation
 Event timeline analysis
 ## Tech Stack
-- React (Vite)
-- JavaScript (ES6)
-- CSS (inline styling / optional Tailwind upgrade)
+- React 
+- JavaScript 
+- CSS 
 
 
