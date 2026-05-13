@@ -62,16 +62,16 @@ Dark-themed interface inspired by real-world security dashboards (e.g., SIEM too
 - Node.js (development environment)
 
 ## Running Project Locally
-# Clone repository
+#### Clone repository
 git clone https://github.com/ruhani-source/SignalScope-SOC-Alert-Triage-Dashboard.git
 
-# Navigate into project
+#### Navigate into project
 cd SignalScope-SOC-Alert-Triage-Dashboard
 
-# Install dependencies
+#### Install dependencies
 npm install
 
-# Start development server
+#### Start development server
 npm run dev
 
 Then open:
