@@ -13,7 +13,7 @@ Security analysts deal with high volumes of noisy alerts. The hardest part is no
 - Suggesting investigation actions
 - Visualizing user login behavior over time
   
-## Key Features
+### Key Features
 # Risk-Based Alert Prioritization
 
 Alerts are scored using a rule-based system that evaluates behavioral security signals such as:
