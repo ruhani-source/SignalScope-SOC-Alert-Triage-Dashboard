@@ -1,87 +1,74 @@
 # SignalScope: SOC Alert Triage Dashboard
 
-An interactive Security Operations Center (SOC) simulation tool designed to help analysts prioritize, interpret, and respond to security alerts under uncertainty using explainable, rule-based decision logic.
+The SOC Security Analytics Dashboard simulates a Security Operations Center (SOC) workflow where security events are analyzed to identify potentially suspicious activity.The application processes login events, detects security indicators, calculates a risk score, assigns a severity level, and presents the results through an interactive analyst dashboard.
 
-## Overview
+## Features
 
-Security analysts deal with high volumes of noisy alerts. The hardest part is not detection, it’s deciding what matters.
+- Rule-based security event detection
+  - New country
+  - New device
+  - Suspected VPN/proxy usage
+  - Impossible travel
+  - Multiple failed login attempts
 
-## SignalScope simulates a SOC triage workflow by:
+- Explainable risk scoring
+  - Each detected indicator contributes a weighted score.
+  - Analysts can see which indicators contributed to an alert.
 
-- Ranking alerts by risk
-- Explaining why an alert is risky
-- Suggesting investigation actions
-- Visualizing user login behavior over time
-  
-## Key Features
-### Risk-Based Alert Prioritization
+- Alert prioritization
+  - Alerts are categorized as Low, Medium, High, or Critical.
+  - Alerts are sorted by risk score.
 
-Alerts are scored using a rule-based system that evaluates behavioral security signals such as:
+- Alert investigation
+  - Risk breakdown
+  - Recommended investigation actions
+  - Login timeline
+  - Analyst notes
 
-- New country login
-- Impossible travel patterns
-- New device detection
-- VPN/proxy suspicion
-- MFA usage anomalies
+- Alert workflow
+  - Open
+  - Investigating
+  - Resolved
 
-### Explainable Security Decisions
+- Interactive dashboard
+  - Alert statistics
+  - Severity distribution
+  - Search by user
+  - Severity filtering
+  - Status filtering
 
-Each alert includes a transparent breakdown of:
+ ### Application Architecture
 
-- Contributing signals
-- Weighted risk factors
-- Human-readable interpretation of risk
-  
-### Analyst Decision Support
+```text
+React Frontend
+      │
+      │ REST API
+      ▼
+FastAPI Backend
+      │
+      │ SQL
+      ▼
+MySQL Database
 
-The system suggests recommended actions such as:
+## Detection workflow
 
-- Verifying login origin
-- Checking device registration
-- Reviewing IP reputation
-- Investigating session anomalies
-  
-### Login Timeline Visualization
-
-Displays chronological user activity:
-
-- Login events
-- Locations
-- Devices used
-
-Helps identify suspicious behavioral patterns over time.
-
-## Tech Stack
-- React (Vite)
-- JavaScript (ES6+)
-- HTML/CSS (inline styling)
-- Node.js (development environment)
-
-## Running Project Locally
-#### 1. Clone repository
-git clone https://github.com/ruhani-source/SignalScope-SOC-Alert-Triage-Dashboard.git
-
-#### 2. Navigate into project
-cd SignalScope-SOC-Alert-Triage-Dashboard
-
-#### 3. Install dependencies
-npm install
-
-#### 4. Start development server
-npm run dev
-
-#### Then open:
-http://localhost:5173
-
-
-## How to Use
-- Select an alert from the left panel
-- View risk score and explanation breakdown
-- Review recommended analyst actions
-- Inspect login timeline for behavioral anomalies
+Security Events
+      ↓
+Detection Engine
+      ↓
+Security Indicators
+      ↓
+Risk Score
+      ↓
+Severity
+      ↓
+Alert
+      ↓
+Analyst Investigation
 
 ### Problem It Solves
 
+Security analysts deal with high volumes of noisy alerts. The hardest part is not detection, it’s deciding what matters.
 Traditional security tools often present alerts as: high-volume, low-context signals
 
 SignalScope improves this by: adding explainability, prioritization, and decision support
