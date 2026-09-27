@@ -2,6 +2,23 @@
 
 The SOC Security Analytics Dashboard simulates a Security Operations Center (SOC) workflow where security events are analyzed to identify potentially suspicious activity.The application processes login events, detects security indicators, calculates a risk score, assigns a severity level, and presents the results through an interactive analyst dashboard.
 
+## Detection workflow
+```text
+Security Events
+      ↓
+Detection Engine
+      ↓
+Security Indicators
+      ↓
+Risk Score
+      ↓
+Severity
+      ↓
+Alert
+      ↓
+Analyst Investigation
+```
+
 ## Features
 
 - Rule-based security event detection
@@ -38,7 +55,7 @@ The SOC Security Analytics Dashboard simulates a Security Operations Center (SOC
   - Status filtering
 
  ### Application Architecture
-
+ ```text
 React Frontend
       │
       │ REST API
@@ -48,23 +65,8 @@ FastAPI Backend
       │ SQL
       ▼
 MySQL Database
+ ```
 
-
-## Detection workflow
-
-Security Events
-      ↓
-Detection Engine
-      ↓
-Security Indicators
-      ↓
-Risk Score
-      ↓
-Severity
-      ↓
-Alert
-      ↓
-Analyst Investigation
 
 ### Problem It Solves
 
