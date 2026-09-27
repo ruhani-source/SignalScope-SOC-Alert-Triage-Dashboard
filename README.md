@@ -39,7 +39,6 @@ The SOC Security Analytics Dashboard simulates a Security Operations Center (SOC
 
  ### Application Architecture
 
-```text
 React Frontend
       │
       │ REST API
@@ -49,6 +48,7 @@ FastAPI Backend
       │ SQL
       ▼
 MySQL Database
+
 
 ## Detection workflow
 
