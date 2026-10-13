@@ -1,4 +1,4 @@
-# SignalScope: SOC Alert Triage Dashboard
+# SignalScope: Security Analytics Dashboard
 
 The SOC Security Analytics Dashboard simulates a Security Operations Center (SOC) workflow where security events are analyzed to identify potentially suspicious activity.The application processes login events, detects security indicators, calculates a risk score, assigns a severity level, and presents the results through an interactive analyst dashboard.
 
